@@ -61,6 +61,7 @@ jobs:
 
       - name: Prepare Linux Release Assets
         run: |
+          sudo apt-get install libopenal-dev
           mkdir -p ./ci-artifacts/linux
           ./.github/scripts/releases/extract_build_unix.sh ./ci-artifacts/linux ./ci-artifacts/opengoal-linux-static ./
           pushd ci-artifacts/linux
