@@ -38,7 +38,7 @@ jobs:
 
   # Upload the Artifacts
   upload_artifacts:
-    if: github.repository == github.repository
+    if: github.repository == 'my-opengoal-mods/OG-Just-Green-Jak'
     needs:
       - build_windows_clang
       - build_linux_clang
